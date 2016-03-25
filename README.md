@@ -1,9 +1,9 @@
 # Smartphone Activity Study
 A repository containing data, a codebook, and R analysis files which deal with cleaning up a set of data from a study on human activity recognition by the UCI Centre for Machine Learning and Intelligent Systems. 
 
-This repos has been created as a requirement of the final week of the course "Getting and Cleaning Data" offered via Coursera by the John Hopkins Bloomberg School of Public Health.
+This repo has been created as a requirement for the final week of the course "Getting and Cleaning Data" offered via Coursera by the John Hopkins Bloomberg School of Public Health.
 
-The full link to the study is (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones].
+The link to the full study is (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones].
 
 ## Description
 The file `smartphone_analysis.R` is a set of R commands that will manipulate the data from the study to perform a number of steps including:
