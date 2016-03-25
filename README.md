@@ -1,0 +1,2 @@
+# smartphone-activity-study
+A repository containing data, a codebook, and R analysis files which deal with cleaning up a set of data from a study on human activity recognition by the UCI Centre for Machine Learning and Intelligent Systems. The full link to the study is (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones].
