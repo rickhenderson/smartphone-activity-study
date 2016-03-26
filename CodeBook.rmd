@@ -8,15 +8,24 @@ output:
 ---
 
 ## Project Description
-Short description of the project
+This project deals with tidying up a dataset and implifying some tables to produce a set of data useful for analysis, as well as a dataset containing average values calculated by subject and activity. The data comes from a study of human movement recorded by sensors from a smartphone.
 
 ##Study design and data processing
 
 ###Collection of the raw data
-Description of how the data was collected.
+The raw data for this project was collected by researchers at University of California Irving (UCI) Center for Machine Learning and Intelligent Systems.
+
+A full description is available at the site where the data was obtained can be found here:
+
+[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+
+The raw data can be downloaded as a zip file from here:
+[https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
+and should be unzipped into a subfolder called _data_ inside the folder where the analysis will take place (the folder where the analysis file gets downloaded to and where it will be executed from.
 
 ###Notes on the original (raw) data 
-Some additional notes (if avaialble, otherwise you can leave this section out).
+The site listed above explains the study in detail and the README file provided in the data set explains how the original data raw data ways collected as well as how other variables not used in this project were calculated.
 
 ##Creating the tidy datafile
 
@@ -50,9 +59,6 @@ Some information on the variable including:
  - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
 
 (you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
 
 ##Sources
 [Getting and Cleaning The Assignment](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/) - blog post by ThoughtfulBloke
