@@ -61,4 +61,6 @@ Some information on the variable including:
 (you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
 ##Sources
-[Getting and Cleaning The Assignment](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/) - blog post by ThoughtfulBloke
+* [Getting and Cleaning The Assignment](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/) - blog post by ThoughtfulBloke
+* [Using Apply, Sapply, and Lapply](http://www.r-bloggers.com/using-apply-sapply-lapply-in-r/) - article on [R-Bloggers.com](http://www.r-bloggers.com).
+
