@@ -26,8 +26,11 @@ Description on how to create the tidy data file (1. download the data, ...)/
 ###Cleaning of the data
 Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
 
-This is the long form as mentioned in the rubric as either long or wide form is acceptable.
+This data is the long form as mentioned in the rubric as either long or wide form is acceptable.
 
+* Merges the training and the test sets to create one data set
+  * Before the training and test sets could be merged, combine the y\_train.txt file with the X\_train.txt using `cbind()` to add a variable to the train data that indicates which activity was being performed.
+  * Combine y\_test.txt file with the data in the X\_test.txt file using `cbind()` to add a variable to the test data that indicates which activity was being peformed.
 
 ##Description of the variables in the tiny_data.txt file
 General description of the file including:
