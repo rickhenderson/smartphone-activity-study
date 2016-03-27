@@ -8,9 +8,11 @@ output:
 ---
 
 ## Project Description
-This project deals with tidying up a dataset and implifying some tables to produce a set of data useful for analysis, as well as a dataset containing average values calculated by subject and activity. The data comes from a study of human movement recorded by sensors from a smartphone.
+This project deals with tidying up a dataset and simplifying some tables to produce a set of data useful for analysis. It also entails creating a __tidy__ dataset containing average values calculated by __subject__ and __activity__. The data comes from a study of human movement recorded by sensors from a smartphone.
 
-##Study design and data processing
+In this document, __subject__ means a subject that took part in the original study, or an identifying number, and __activity__ refers to an activity performed by the subject during the study, or a descriptive word or value used in the dataset to represent the activity.
+
+##Study Design and Data Processing
 
 ###Collection of the raw data
 The raw data for this project was collected by researchers at University of California Irving (UCI) Center for Machine Learning and Intelligent Systems.
@@ -22,12 +24,12 @@ A full description is available at the site where the data was obtained can be f
 The raw data can be downloaded as a zip file from here:
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-This file should be unzipped into a subfolder called _data_ inside the folder where the analysis will take place (the folder where the analysis file gets downloaded to and where it will be executed from.
+This file should be unzipped into a subfolder called _ucidata_ inside the folder where the analysis will take place (the folder where the analysis file gets downloaded to and where it will be executed from.
 
 ###Notes on the original (raw) data 
-The site listed above explains the study in detail and the README file provided in the data set explains how the original data raw data ways collected as well as how other variables not used in this project were calculated.
+The site listed above explains the study in detail and the README file provided in the data set explains how the original, raw data was collected as well as how other variables not used in this project were calculated.
 
-##Creating the tidy datafile
+##Creating the Tidy Datafile
 
 ###Guide to create the tidy data file
 Description on how to create the tidy data file (1. download the data, ...)/
@@ -41,13 +43,38 @@ This data is the long form as mentioned in the rubric as either long or wide for
   * Before the training and test sets could be merged, combine the y\_train.txt file with the X\_train.txt using `cbind()` to add a variable to the train data that indicates which activity was being performed.
   * Combine y\_test.txt file with the data in the X\_test.txt file using `cbind()` to add a variable to the test data that indicates which activity was being peformed.
 
-##Description of the variables in the tiny_data.txt file
-General description of the file including:
- - Dimensions of the dataset
- - Summary of the data
- - Variables present in the dataset
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+##Description of the variables in the _avg\_by\_actsub\_tidy.csv_ file
+* Dimensions: 180 rows x 81 columns
+*
+```R
+dim(avg_by_actsub_tidy)
+[1] 180  81
+> head(avg_by_actsub_tidy)[,1:4]
+  subjectID         activityID tBodyAcc.mean...X tBodyAcc.mean...Y
+1         1             LAYING         0.2215982      -0.040513953
+2         1            SITTING         0.2612376      -0.001308288
+3         1           STANDING         0.2789176      -0.016137590
+4         1            WALKING         0.2773308      -0.017383819
+5         1 WALKING_DOWNSTAIRS         0.2891883      -0.009918505
+6         1   WALKING_UPSTAIRS         0.2554617      -0.023953149
+> head(avg_by_actsub_tidy)[,1:7]
+  subjectID         activityID tBodyAcc.mean...X tBodyAcc.mean...Y tBodyAcc.mean...Z tBodyAcc.std...X tBodyAcc.std...Y
+1         1             LAYING         0.2215982      -0.040513953        -0.1132036      -0.92805647     -0.836827406
+2         1            SITTING         0.2612376      -0.001308288        -0.1045442      -0.97722901     -0.922618642
+3         1           STANDING         0.2789176      -0.016137590        -0.1106018      -0.99575990     -0.973190056
+4         1            WALKING         0.2773308      -0.017383819        -0.1111481      -0.28374026      0.114461337
+5         1 WALKING_DOWNSTAIRS         0.2891883      -0.009918505        -0.1075662       0.03003534     -0.031935943
+6         1   WALKING_UPSTAIRS         0.2554617      -0.023953149        -0.0973020      -0.35470803     -0.002320265
+```
+* Variables in the data set:
+  * __subjectID__: A value between 1 and 30 indicating the subject who performed the activity in the original study
+  * __activityID__: A descriptive word describing the activity that the subject peformed. Possible values were: 
+    * WALKING\_UPSTAIRS
+    * WALKING\_DOWNSTAIRS
+    * WALKING
+    * STANDING
+    * SITTING
+    * LAYING
 
 ###Variable 1 (repeat this section for all variables in the dataset)
 Short description of what the variable describes.
@@ -57,8 +84,6 @@ Some information on the variable including:
  - Unique values/levels of the variable
  - Unit of measurement (if no unit of measurement list this as well)
  - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
 ##Sources
 * [Getting and Cleaning The Assignment](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/) - blog post by ThoughtfulBloke
