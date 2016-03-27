@@ -8,12 +8,12 @@ The link to the full study is [http://archive.ics.uci.edu/ml/datasets/Human+Acti
 ## Description
 The file `smartphone_analysis.R` is a set of R commands that will manipulate the data from the study to perform a number of steps including:
 * combine the test data with the training data
-* calculate __mean__ and __standard deviation__ for the provided measurements
+* extract __mean__ and __standard deviation__ for the provided measurements from a large set of variables
 * inserts the descriptive _activity names_ into the dataset for readability
 * sets the _variable names_ properly to also make the dataset easier to read
+* produces output as __.CSV__ which contains the average of each of the _mean_ and _standard deviation_ variables for each _activity_ for each _participant. 
 
-A second data set is also provided which contains the average of each _variable_ for each _activity_ for each _participant_.
-The file `participant_averages.R` performs that analysis.
+The output produced by the analysis file is contained in the file __avg\_by\_actsub\_tidy.csv__.
 
 If you have any questions about this data set, please contact me at rick.henderson.blog@gmail.com with __"Smartphone Activity Study"__ in the subject line.
 
