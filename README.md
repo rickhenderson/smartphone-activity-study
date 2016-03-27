@@ -17,3 +17,4 @@ The output produced by the analysis file is contained in the file __avg\_by\_act
 
 If you have any questions about this data set, please contact me at rick.henderson.blog@gmail.com with __"Smartphone Activity Study"__ in the subject line.
 
+This repo was created as a requirement of the final week of the __Getting and Cleaning Data__ course on [Coursera](http://www.coursera.org).
