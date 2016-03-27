@@ -117,9 +117,9 @@ by_actsub <- group_by(alldata, subjectID, activityID)
 avg_by_actsub <- summarise_each(by_actsub, funs(mean))
 
 message("Analysis complete. Writing out table containing average measurements grouped by subject and activity.")
-write.table(avg_by_actsub, "avg_by_actsub_tidy.csv", sep=",")
+write.table(avg_by_actsub, "avg_by_actsub_tidy.txt", sep=" ")
 
-message("* The file avg_by_actsub_tidy.csv has been written into the current working directory. *")
+message("* The file avg_by_actsub_tidy.txt has been written into the current working directory. *")
 
 # Remove un-needed data frames to make things cleaner
 message("Removing unneeded data frames from memory...")
@@ -130,5 +130,5 @@ rm(y_test)
 rm(subject_test)
 rm(subject_train)
 rm(testdataset, traindataset)
-rm(features, activities, alldata)
+rm(features, activities, alldata, by_actsub)
 message("DONE!")
