@@ -24,7 +24,7 @@ A full description is available at the site where the data was obtained can be f
 The raw data can be downloaded as a zip file from here:
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
-This file should be unzipped into a subfolder called _ucidata_ inside the folder where the analysis will take place (the folder where the analysis file gets downloaded to and where it will be executed from.
+This file should be unzipped into a subfolder called _ucidata_ inside the folder where the analysis will take place (the folder where the analysis file gets downloaded to and where it will be executed from).
 
 ###Notes on the original (raw) data 
 The site listed above explains the study in detail and the README file provided in the data set explains how the original, raw data was collected as well as how other variables not used in this project were calculated.
