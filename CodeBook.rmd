@@ -60,7 +60,7 @@ dim(avg_by_actsub_tidy)
 6         1   WALKING_UPSTAIRS         0.2554617      -0.023953149        -0.0973020      -0.35470803     -0.002320265
 ```
 * Variables in the data set:
-  * __subjectID__: A value between 1 and 30 indicating the subject who performed the activity in the original study
+  * __subjectID__: A value between 1 and 30 indicating the subject who performed the activity in the original study.
   * __activityID__: A descriptive word describing the activity that the subject peformed. Possible values were: 
     * WALKING\_UPSTAIRS
     * WALKING\_DOWNSTAIRS
@@ -68,11 +68,13 @@ dim(avg_by_actsub_tidy)
     * STANDING
     * SITTING
     * LAYING
-  * The remaining __79__ variables were extracted from the original list of _561_ variables by using the `grep` command to find only those variables that contained the strings 'mean()' and 'std()' to find only the variables that calculated a _mean_ and _standard deviation_ for the data collected during the study. This purposefully __excluded__ variables such as _fBodyAccJerk-meanFreq()-Y_ and _angle(X,gravityMean)_ which were included in the original data set but was not of interested for this project.
+
+The remaining __79__ variables were extracted from the original list of _561_ variables by using the `grep` command to find only those variables that contained the strings 'mean()' and 'std()'. This provided only the variables that calculated a _mean_ and _standard deviation_ for the data collected during the study. This __purposefully excluded__ variables such as _fBodyAccJerk-meanFreq()-Y_ and _angle(X,gravityMean)_ which were included in the original data set, but were not of interest for this project.
+
 The other variables and their descriptions can be found in the README for the original data set at by following the link provided to UCI.
 
 ##Sources
-* [Human Activity Recognition Using Smartphones ](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) - The original study at the UCI Center for Machine Learning and Intelligent Systems
+* [Human Activity Recognition Using Smartphones ](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) - The original study at the UCI Center for Machine Learning and Intelligent Systems.
 * [Getting and Cleaning The Assignment](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/) - blog post by ThoughtfulBloke.
 * [Using Apply, Sapply, and Lapply](http://www.r-bloggers.com/using-apply-sapply-lapply-in-r/) - article on [R-Bloggers.com](http://www.r-bloggers.com).
 
