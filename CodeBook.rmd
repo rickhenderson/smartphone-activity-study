@@ -45,18 +45,11 @@ This data is the long form as mentioned in the rubric as either long or wide for
 
 ##Description of the variables in the _avg\_by\_actsub\_tidy.csv_ file
 * Dimensions: 180 rows x 81 columns
-*
+
 ```R
 dim(avg_by_actsub_tidy)
 [1] 180  81
-> head(avg_by_actsub_tidy)[,1:4]
-  subjectID         activityID tBodyAcc.mean...X tBodyAcc.mean...Y
-1         1             LAYING         0.2215982      -0.040513953
-2         1            SITTING         0.2612376      -0.001308288
-3         1           STANDING         0.2789176      -0.016137590
-4         1            WALKING         0.2773308      -0.017383819
-5         1 WALKING_DOWNSTAIRS         0.2891883      -0.009918505
-6         1   WALKING_UPSTAIRS         0.2554617      -0.023953149
+
 > head(avg_by_actsub_tidy)[,1:7]
   subjectID         activityID tBodyAcc.mean...X tBodyAcc.mean...Y tBodyAcc.mean...Z tBodyAcc.std...X tBodyAcc.std...Y
 1         1             LAYING         0.2215982      -0.040513953        -0.1132036      -0.92805647     -0.836827406
@@ -75,17 +68,11 @@ dim(avg_by_actsub_tidy)
     * STANDING
     * SITTING
     * LAYING
-
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
-
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
+  * The remaining __79__ variables were extracted from the original list of _561_ variables by using the `grep` command to find only those variables that contained the strings 'mean()' and 'std()' to find only the variables that calculated a _mean_ and _standard deviation_ for the data collected during the study. This purposefully __excluded__ variables such as _fBodyAccJerk-meanFreq()-Y_ and _angle(X,gravityMean)_ which were included in the original data set but was not of interested for this project.
+The other variables and their descriptions can be found in the README for the original data set at by following the link provided to UCI.
 
 ##Sources
-* [Getting and Cleaning The Assignment](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/) - blog post by ThoughtfulBloke
+* [Human Activity Recognition Using Smartphones ](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) - The original study at the UCI Center for Machine Learning and Intelligent Systems
+* [Getting and Cleaning The Assignment](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/) - blog post by ThoughtfulBloke.
 * [Using Apply, Sapply, and Lapply](http://www.r-bloggers.com/using-apply-sapply-lapply-in-r/) - article on [R-Bloggers.com](http://www.r-bloggers.com).
 
