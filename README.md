@@ -11,7 +11,7 @@ The file `smartphone_analysis.R` is a set of R commands that will manipulate the
 * extract __mean__ and __standard deviation__ for the provided measurements from a large set of variables
 * inserts the descriptive _activity names_ into the dataset for readability
 * sets the _variable names_ properly to also make the dataset easier to read
-* produces output as __.CSV__ which contains the average of each of the _mean_ and _standard deviation_ variables for each _activity_ for each _subject_ (participant in the study). 
+* produces output as __.txt__ which contains the average of each of the _mean_ and _standard deviation_ variables for each _activity_ for each _subject_ (participant in the study). 
 
 The output produced by the analysis file is contained in the file __avg\_by\_actsub\_tidy.txt__.
 
