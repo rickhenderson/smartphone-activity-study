@@ -1,7 +1,7 @@
 ---
 title: "Smartphone Study Codebook"
 author: "Rick Henderson"
-date: "2016/03/25"
+date: "2016/03/26"
 output:
   html_document:
     keep_md: yes
@@ -75,6 +75,6 @@ The other variables and their descriptions can be found in the README for the or
 
 ##Sources
 * [Human Activity Recognition Using Smartphones ](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) - The original study at the UCI Center for Machine Learning and Intelligent Systems.
-* [Getting and Cleaning The Assignment](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/) - blog post by ThoughtfulBloke.
-* [Using Apply, Sapply, and Lapply](http://www.r-bloggers.com/using-apply-sapply-lapply-in-r/) - article on [R-Bloggers.com](http://www.r-bloggers.com).
+* [Getting and Cleaning The Assignment](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/) - A blog post by ThoughtfulBloke.
+* [Using Apply, Sapply, and Lapply](http://www.r-bloggers.com/using-apply-sapply-lapply-in-r/) - An article on [R-Bloggers.com](http://www.r-bloggers.com).
 
