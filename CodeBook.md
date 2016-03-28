@@ -73,7 +73,7 @@ Here is a list of each of the steps performed by the analysis file.
   traindataset <- traindataset[, grep("mean()|std()", names(traindataset) )]
    ```
 
-* Combine the y\_test with X\_test as an extra column to add participant id as first column.
+* Combine the y\_test with X\_test as an extra column to add __subjectID__ as first column.
 * Combine the testing data with the subject data.
 * Combine both datasets using `rbind` as it is really just a matter of appending the rows of both tables together. 
 * Read in the activities list which contains readable labels for each activity ID.
