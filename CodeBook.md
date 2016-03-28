@@ -89,7 +89,7 @@ avg_by_actsub <- summarise_each(by_actsub, funs(mean))
 * Write out the data as a table using `write.table`.
 
 ```R
-write.table(avg_by_actsub, "avg_by_actsub_tidy.txt", sep=" ")
+write.table(avg_by_actsub, "avg_by_actsub_tidy.txt", row.name=FALSE, sep=" ")
 ```
 
 * Remove un-needed data frames to make things cleaner.
