@@ -34,6 +34,7 @@ The site listed above explains the study in detail and the README file provided 
 
 ###Guide to create the tidy data file
 Follow these steps to create the tidy data file:
+
 1. Download the [smartphone_analysis.R](smartphone_analysis.R) file from this repository.
 2. Download the raw data.
 3. Unzip the raw data into a folder called `ucidata`.
