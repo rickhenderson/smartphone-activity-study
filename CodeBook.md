@@ -1,7 +1,7 @@
 ---
 title: "Smartphone Study Codebook"
 author: "Rick Henderson"
-date: "2016/03/26"
+date: "2016/03/27"
 output:
   html_document:
     keep_md: yes
