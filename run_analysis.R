@@ -1,4 +1,7 @@
-# Simple file for week 4 project
+# run_analysis.R
+# Read in raw data and perform some cleaning
+# to generate a tidy dataset of mean values grouped by activity and subject.
+
 # Get and Clean Data
 # Created by Rick Henderson
 # Created on: March 15, 2016
