@@ -1,5 +1,5 @@
 # Smartphone Activity Study
-this repository contains a single, tidy dataset stored as a .txt file, a codebook, and an R analysis file which deals with cleaning up a set of data from a study on human activity recognition by the UCI Centre for Machine Learning and Intelligent Systems. 
+This repository contains a single, tidy dataset stored as a .txt file, a codebook, and an R analysis file which deals with cleaning up a set of data from a study on human activity recognition by the UCI Centre for Machine Learning and Intelligent Systems. 
 
 This repo has been created as a requirement for the final week of the course "Getting and Cleaning Data" offered via Coursera by the John Hopkins Bloomberg School of Public Health.
 
