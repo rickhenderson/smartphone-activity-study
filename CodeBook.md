@@ -122,6 +122,8 @@ dim(avg_by_actsub_tidy)
 
 The remaining __79__ variables were extracted from the original list of _561_ variables by using the `grep` command to find only those variables that contained the strings 'mean()' and 'std()'. This provided only the variables that calculated a _mean_ and _standard deviation_ for the data collected during the study. This __purposefully excluded__ variables such as _fBodyAccJerk-meanFreq()-Y_ and _angle(X,gravityMean)_ which were included in the original data set, but were not of interest for this project.
 
+The values in the original dataset were normalized.
+
 The other variables and their descriptions can be found in the README for the original data set by following the link provided to the UCI study.
 
 ##Sources
