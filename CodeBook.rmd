@@ -10,7 +10,7 @@ output:
 ## Project Description
 This project deals with tidying up a dataset and simplifying some tables to produce a set of data useful for analysis. It also entails creating a __tidy__ dataset containing average values calculated by __subject__ and __activity__. The data comes from a study of human movement recorded by sensors from a smartphone.
 
-In this document, __subject__ means a subject that took part in the original study, or an identifying number, and __activity__ refers to an activity performed by the subject during the study, or a descriptive word or value used in the dataset to represent the activity.
+In this document, __subject__ means a subject that took part in the original study, or the identifying number used to identify a participant, and __activity__ refers to an activity performed by the subject during the study, or a descriptive word or value used in the dataset to represent the activity.
 
 ##Study Design and Data Processing
 
