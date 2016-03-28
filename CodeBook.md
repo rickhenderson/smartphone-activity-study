@@ -111,8 +111,8 @@ dim(avg_by_actsub_tidy)
 6         1   WALKING_UPSTAIRS         0.2554617      -0.023953149        -0.0973020      -0.35470803     -0.002320265
 ```
 * Variables in the data set:
-  * __subjectID__: A value between 1 and 30 indicating the subject who performed the activity in the original study.
-  * __activityID__: A descriptive word describing the activity that the subject peformed. Possible values were: 
+  * __subjectID__: A value between 1 and 30 indicating the subject who performed the activity in the original study. Units: none.
+  * __activityID__: A descriptive word describing the activity that the subject peformed. Units: none. Possible values were: 
     * WALKING\_UPSTAIRS
     * WALKING\_DOWNSTAIRS
     * WALKING
