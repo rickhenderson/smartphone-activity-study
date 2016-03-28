@@ -54,14 +54,14 @@ Here is a list of each of the steps performed by the analysis file.
 * Read in the training data.
 * Rename the variable for the activity ID in the y\_train file since it contains the data for which activity was performed for each row of the X\_train data set.
 * Read in the subject\_train file to store in a data frame as it contains the list of subject IDs to match the X\_train data set.
-* Rename the variable in the subject\_train table as "subjectID".
+* Rename the variable in the subject\_train table as __subjectID__.
 * Set all the variable names in the X\_train data frame using the variables listed in the features data frame.
-* Combine the Y\_train with X\_train as an extra column to add __subjectid__ as first column using `cbind`.
+* Combine the Y\_train with X\_train as an extra column to add __subjectID__ as first column using `cbind`.
 * Combine the training data with the subject data using `cbind`.
 * Read all the testing data into a data frame and clean it up similar to the training data.
 * Rename the variable for the activity ID as __activityID__ although later it will be readable labels, not ID numbers.
-* Read the __subject_test.txt__ file into a dataframe to get subject IDs.
-* Rename the variable for the subject ID as __subjectid__.
+* Read the __subject\_test.txt__ file into a dataframe to get subject IDs.
+* Rename the variable for the subject ID as __subjectID__.
 * Set the variable names for the test data from the feature list.
 * Combine the y\_test with X\_test as an extra column to add __subjectID__ as first column using `cbind`.
 * Combine the training data with the subject data using `cbind`.
