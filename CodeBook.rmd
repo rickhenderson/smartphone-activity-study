@@ -60,36 +60,41 @@ Here is a list of each of the steps performed by the analysis file.
 * Combine the training data with the subject data using `cbind`.
 * Read all the testing data into a data frame and clean it up similar to the training data.
 * Rename the variable for the activity ID as __activityID__ although later it will be readable labels, not ID numbers.
-* Read in the subject_test.txt file to get subject IDs.
-* Rename the variable for the subject ID
-* Set the variable names for the test data from the feature list
-* Combine the y\_test with X\_test as an extra column to add participant id as first column using `cbind`.
+* Read the __subject_test.txt__ file into a dataframe to get subject IDs.
+* Rename the variable for the subject ID as __subjectid__.
+* Set the variable names for the test data from the feature list.
+* Combine the y\_test with X\_test as an extra column to add __subjectID__ as first column using `cbind`.
 * Combine the training data with the subject data using `cbind`.
 * Extract just the values that are measurements of mean and standard deviation.
   * This completes step 2 of the project and was done by using the `grep` command to isolate variables that contained 'mean()' as well as 'std()' as specified in the instructions. The code used was:
+
   ```R
   testdataset <- testdataset[, grep("mean()|std()", names(testdataset) )]
   traindataset <- traindataset[, grep("mean()|std()", names(traindataset) )]
    ```
+
 * Combine the y\_test with X\_test as an extra column to add participant id as first column.
 * Combine the testing data with the subject data.
 * Combine both datasets using `rbind` as it is really just a matter of appending the rows of both tables together. 
 * Read in the activities list which contains readable labels for each activity ID.
 * Set the column names for the activities data frame.
-* Merge the Activity Labels into the full dataset to replace the activityID codes.
-* Group the data by subjectID and activityID.
-* Calculate the average for *all* variables for each group using `summarise_each`.
+* Merge the Activity Labels into the full dataset to replace the __activityID__ codes.
+* Group the data by __subjectID__ and __activityID__.
+* Calculate the mean for *all* variables for each group using `summarise_each`.
+
 ```R
 avg_by_actsub <- summarise_each(by_actsub, funs(mean))
 ```
+
 * Write out the data as a table using `write.table`.
+
 ```R
 write.table(avg_by_actsub, "avg_by_actsub_tidy.txt", sep=" ")
 ```
+
 * Remove un-needed data frames to make things cleaner.
 
-
-##Description of the variables in the _avg\_by\_actsub\_tidy.csv_ file
+##Description of the variables in the _avg\_by\_actsub\_tidy.txt_ file
 * Dimensions: 180 rows x 81 columns
 
 ```R
