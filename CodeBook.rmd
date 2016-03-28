@@ -48,18 +48,18 @@ This data is the long form as mentioned in the rubric as either long or wide for
 ###Cleaning of the data
 Here is a list of each of the steps performed by the analysis file.
 
-* Load the `dplyr` to make working with tables easier.
+* Load the `dplyr` library to make working with tables easier.
 * Read in the features file and store them in a data frame.
 * Set the variables names for the features file properly.
 * Read in the training data.
 * Rename the variable for the activity ID in the y\_train file since it contains the data for which activity was performed for each row of the X\_train data set.
-* Read in the subject_train file to store in a data frame as it contains the list of subject IDs to match the X\_train data set.
-* Rename the variable in the subject\_train table as "subjectID"
+* Read in the subject\_train file to store in a data frame as it contains the list of subject IDs to match the X\_train data set.
+* Rename the variable in the subject\_train table as "subjectID".
 * Set all the variable names in the X\_train data frame using the variables listed in the features data frame.
-* Combine the Y\_train with X\_train as an extra column to add subject id as first column using `cbind`.
+* Combine the Y\_train with X\_train as an extra column to add __subjectid__ as first column using `cbind`.
 * Combine the training data with the subject data using `cbind`.
-* Read all the testing data into a data frame and clean it up similar to the training data
-* Rename the variable for activity ID
+* Read all the testing data into a data frame and clean it up similar to the training data.
+* Rename the variable for the activity ID as __activityID__ although later it will be readable labels, not ID numbers.
 * Read in the subject_test.txt file to get subject IDs.
 * Rename the variable for the subject ID
 * Set the variable names for the test data from the feature list
