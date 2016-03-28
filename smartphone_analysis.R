@@ -117,7 +117,7 @@ by_actsub <- group_by(alldata, subjectID, activityID)
 avg_by_actsub <- summarise_each(by_actsub, funs(mean))
 
 message("Analysis complete. Writing out table containing average measurements grouped by subject and activity.")
-write.table(avg_by_actsub, "avg_by_actsub_tidy.txt", sep=" ")
+write.table(avg_by_actsub, "avg_by_actsub_tidy.txt", row.name=FALSE, sep=" ")
 
 message("* The file avg_by_actsub_tidy.txt has been written into the current working directory. *")
 
