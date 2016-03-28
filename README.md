@@ -8,7 +8,7 @@ The link to the full study is [http://archive.ics.uci.edu/ml/datasets/Human+Acti
 ## Description
 In brief, the researchers observed 30 participants (called subjects for the rest of this repo) while they performed 6 different activities. The subjects were wearing a smartphone to track their movements so that data could be retrieved from the phone's sensors to try and determine which of the six activities the subject had performed, just based on the sensor reading. The data from the sensors was then split into two groups: 70% of the subjects' data was placed in a training group for training the algorithms for detecting which activity was being performed, and the other 30% was placed in a test group to test the algortithms.
 
-In this repo, the file `smartphone_analysis.R` is a set of R commands that will manipulate the data from the study to perform a number of steps including:
+In this repo, the file `run_analysis.R` is a set of R commands that will manipulate the data from the study to perform a number of steps including:
 * combine the test data with the training data
 * sets the _variable names_ properly to also make the dataset easier to read
 * combine the raw data from the sensors with data regarding the activity that was performed by each subject and a subject ID to identify each subject
