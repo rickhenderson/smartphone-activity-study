@@ -35,7 +35,7 @@ The site listed above explains the study in detail and the README file provided 
 ###Guide to create the tidy data file
 Follow these steps to create the tidy data file:
 
-1. Download the [smartphone_analysis.R](smartphone_analysis.R) file from this repository.
+1. Download the [run_analysis.R](run_analysis.R) file from this repository.
 2. Download the raw data.
 3. Unzip the raw data into a folder called `ucidata`.
 4. Make sure you install the `dplyr` package by using the `install.packages("dplyr")` command.
@@ -122,7 +122,7 @@ dim(avg_by_actsub_tidy)
 
 The remaining __79__ variables were extracted from the original list of _561_ variables by using the `grep` command to find only those variables that contained the strings 'mean()' and 'std()'. This provided only the variables that calculated a _mean_ and _standard deviation_ for the data collected during the study. This __purposefully excluded__ variables such as _fBodyAccJerk-meanFreq()-Y_ and _angle(X,gravityMean)_ which were included in the original data set, but were not of interest for this project.
 
-The values in the original dataset were normalized.
+The values in the original dataset had been normalized by the researchers.
 
 The other variables and their descriptions can be found in the README for the original data set by following the link provided to the UCI study.
 
